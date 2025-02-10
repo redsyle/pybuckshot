@@ -145,11 +145,10 @@ def invertor(): #ЧХ прописан
     if yourturn == True:
         print("You are using invertor... ");
         time.sleep(0.3)
-        for i in range(len(poryadok)):
-            if poryadok[i] == True:
-                poryadok[i] = not poryadok[i]
-            else:
-                poryadok[i] = not poryadok[i]
+        if poryadok[0] == True:
+            poryadok[0] = not poryadok[0]
+        else:
+            poryadok[0] = not poryadok[0]
     else:
         print("Opponent is using invertor... ");
         time.sleep(0.3)
